@@ -1,13 +1,24 @@
 import './App.css';
 import { BrowserRouter as Router, Switch, Routes, Route } from "react-router-dom";
 import Logo from './components/Logo';
+import Stopwatch from './components/StopWatch';
+import { useStopwatch } from 'react-timer-hook';
 import Nav from './components/Nav';
 import GamePage from './components/GamePage';
 import { useEffect, useState } from 'react';
 import { db } from './firebase/config';
-import { collection, getDocs } from "firebase/firestore"; 
+import { collection, getDocs } from "firebase/firestore";
 
-function App() {
+
+function App() {  
+
+  const {
+    seconds,
+    minutes,
+    start,
+    pause,
+    reset,
+  } = useStopwatch({ autoStart: true });
 
   /*const data = [
     {
@@ -39,6 +50,8 @@ function App() {
     }
   ]
   */
+
+
  
   const gameImageCoordinate = {x: 1169, y: 1678};
 
@@ -64,10 +77,16 @@ function App() {
       <div className="App">
         <div className='nav-container'>
           <Logo/>
+          <Stopwatch
+            minutes={minutes}
+            seconds={seconds}
+            start={start}
+            pause={pause}
+            reset={reset}/>
           <Nav/>
         </div>
         <div className='game-page-container'>
-          <GamePage characterList={characterList} setCharacterList={setCharacterList} gameImageCoordinate={gameImageCoordinate}/>
+          <GamePage characterList={characterList} setCharacterList={setCharacterList} gameImageCoordinate={gameImageCoordinate} pause={pause}/>
         </div>
       </div>
     </Router>

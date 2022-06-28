@@ -2,8 +2,6 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-right: 0;
-    margin-left: auto;
 }
 
 .nav-links {

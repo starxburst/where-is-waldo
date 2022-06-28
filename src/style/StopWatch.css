@@ -1,0 +1,7 @@
+.stop-watch-container {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}

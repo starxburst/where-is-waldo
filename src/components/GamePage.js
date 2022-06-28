@@ -9,7 +9,7 @@ function GamePage(props) {
     const [actualCoordinate, setActualCoordinate] = useState ({});
     const [menuOpen, setMenuOpen] = useState('none');
 
-    const { characterList, gameImageCoordinate, setCharacterList } = props;
+    const { characterList, gameImageCoordinate, setCharacterList, pause } = props;
 
     useEffect(() => {
         handleWin();
@@ -56,6 +56,7 @@ function GamePage(props) {
     const handleWin= () => {
         if(characterList.every(character => character.clicked === true)){
             console.log(`You Win This Game!!!!!!!!!!!`);
+            pause();
         }
     }
 
