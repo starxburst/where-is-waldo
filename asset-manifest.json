@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/where-is-waldo/static/css/main.df4996f7.css",
+    "main.js": "/where-is-waldo/static/js/main.d8efdcf5.js",
+    "static/media/game_page.jpg": "/where-is-waldo/static/media/game_page.b2c4a8b2dde02fe4c7bf.jpg",
+    "static/media/logo.png": "/where-is-waldo/static/media/logo.1a734dcab6fd34b4bf48.png",
+    "index.html": "/where-is-waldo/index.html",
+    "main.df4996f7.css.map": "/where-is-waldo/static/css/main.df4996f7.css.map",
+    "main.d8efdcf5.js.map": "/where-is-waldo/static/js/main.d8efdcf5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.df4996f7.css",
+    "static/js/main.d8efdcf5.js"
+  ]
+}
