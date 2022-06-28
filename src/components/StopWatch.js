@@ -6,9 +6,6 @@ function Stopwatch(props) {
   const {
     seconds,
     minutes,
-    start,
-    pause,
-    reset,
   } = props;
 
 

@@ -79,10 +79,7 @@ function App() {
           <Logo/>
           <Stopwatch
             minutes={minutes}
-            seconds={seconds}
-            start={start}
-            pause={pause}
-            reset={reset}/>
+            seconds={seconds}/>
           <Nav/>
         </div>
         <div className='game-page-container'>
