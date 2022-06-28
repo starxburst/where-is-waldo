@@ -1,0 +1,8 @@
+.game-page-image-container {
+
+}
+
+.game-page-image-container img {
+    max-width: 100%;
+    z-index: -1;
+}
